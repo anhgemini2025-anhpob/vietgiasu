@@ -1,0 +1,23 @@
+{
+  "name": "VietTuorz – Gia sư AI lớp 1–12",
+  "short_name": "VietTuorz",
+  "description": "Hệ sinh thái gia sư AI đồng hành cùng học sinh Việt Nam từ lớp 1 đến lớp 12.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#172554",
+  "theme_color": "#172554",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
