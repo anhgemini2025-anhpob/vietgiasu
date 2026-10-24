@@ -11,7 +11,7 @@ if (!fs.existsSync(publicDir)) {
   fs.mkdirSync(publicDir, { recursive: true });
 }
 
-// Gorgeous, master-crafted SVG icon for VietTuorz App Icon
+// Gorgeous, master-crafted SVG icon for VietTutorz App Icon
 const svgIcon = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>

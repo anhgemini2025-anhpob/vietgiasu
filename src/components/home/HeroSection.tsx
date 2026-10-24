@@ -39,7 +39,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Short Description */}
             <p className="text-lg md:text-xl text-brand-muted leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Khám phá hệ sinh thái gia sư AI VietTuorz – đồng hành cùng học sinh từ lớp 1 đến lớp 12 trên hành trình học tập phù hợp với từng giai đoạn.
+              Khám phá hệ sinh thái gia sư AI VietTutorz – đồng hành cùng học sinh từ lớp 1 đến lớp 12 trên hành trình học tập phù hợp với từng giai đoạn.
             </p>
 
             {/* Action Buttons */}

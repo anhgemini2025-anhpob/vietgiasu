@@ -33,7 +33,7 @@ export const VideoSection: React.FC<VideoSectionProps> = ({
             <span>Trực quan & Dễ hiểu</span>
           </div>
           <h2 className="text-2xl md:text-4xl font-extrabold text-brand-navy tracking-tight">
-            Khám phá VietTuorz trong vài phút
+            Khám phá VietTutorz trong vài phút
           </h2>
           <p className="mt-3 text-base md:text-lg text-brand-muted">
             Tìm hiểu cách hệ sinh thái gia sư AI đồng hành cùng từng học sinh từ lớp 1 đến lớp 12.
@@ -45,7 +45,7 @@ export const VideoSection: React.FC<VideoSectionProps> = ({
           {hasValidVideo ? (
             <iframe
               src={getEmbedUrl(videoUrl)}
-              title="Khám phá VietTuorz – Gia sư AI lớp 1–12"
+              title="Khám phá VietTutorz – Gia sư AI lớp 1–12"
               className="w-full h-full border-0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen

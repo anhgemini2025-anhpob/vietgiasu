@@ -17,7 +17,7 @@ export const ContactPage: React.FC = () => {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-navy tracking-tight">
-            Kết nối cùng VietTuorz
+            Kết nối cùng VietTutorz
           </h1>
 
           <p className="mt-3 text-base sm:text-lg text-brand-muted leading-relaxed">
@@ -121,7 +121,7 @@ export const ContactPage: React.FC = () => {
           <ShieldAlert className="w-4 h-4 text-brand-blue shrink-0 mt-0.5" />
           <div>
             <strong className="text-brand-navy font-semibold">Bảo mật thông tin: </strong>
-            VietTuorz cam kết không lưu trữ thông tin nhận dạng cá nhân của học sinh và không yêu cầu đăng ký tài khoản bắt buộc để trải nghiệm nền tảng.
+            VietTutorz cam kết không lưu trữ thông tin nhận dạng cá nhân của học sinh và không yêu cầu đăng ký tài khoản bắt buộc để trải nghiệm nền tảng.
           </div>
         </div>
 

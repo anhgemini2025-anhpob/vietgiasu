@@ -1,16 +1,16 @@
 import { SiteConfig } from '../types';
 
 /**
- * CẤU HÌNH TẬP TRUNG VIETTUORZ (CENTRALIZED PLACEHOLDERS)
+ * CẤU HÌNH TẬP TRUNG VIETTUTORZ (CENTRALIZED PLACEHOLDERS)
  * Dễ dàng cập nhật các thông tin văn bản, liên hệ, video, căn cứ pháp lý.
  * Thiết kế an toàn và thẩm mỹ kể cả khi thông tin đang ở trạng thái mặc định.
  */
 export const SITE_CONFIG: SiteConfig = {
-  brandName: 'VietTuorz',
-  slogan: 'VIETTUORZ – MỖI NGÀY TIẾN BỘ, MỖI BƯỚC TỰ TIN',
-  subSlogan: 'Mỗi học sinh có một hành trình riêng. VietTuorz giúp việc học trở nên gần gũi, có định hướng và phù hợp hơn với từng em.',
+  brandName: 'VietTutorz',
+  slogan: 'VIETTUTORZ – MỖI NGÀY TIẾN BỘ, MỖI BƯỚC TỰ TIN',
+  subSlogan: 'Mỗi học sinh có một hành trình riêng. VietTutorz giúp việc học trở nên gần gũi, có định hướng và phù hợp hơn với từng em.',
   mainCtaText: 'Chọn lớp – Bắt đầu học',
-  secondaryCtaText: 'Khám phá VietTuorz',
+  secondaryCtaText: 'Khám phá VietTutorz',
   
   // [LINK_YOUTUBE]: Để trống "" hoặc điền URL Youtube (VD: "https://www.youtube.com/embed/dQw4w9WgXcQ" hoặc "https://youtu.be/...")
   // Nếu để trống hoặc chưa cấu hình, hệ thống tự động hiển thị khung giới thiệu tinh tế có thông báo dự phòng
@@ -29,7 +29,7 @@ export const SITE_CONFIG: SiteConfig = {
   // Thông tin liên hệ
   contact: {
     // [EMAIL]: Email hỗ trợ
-    email: 'hotro@viettuorz.edu.vn',
+    email: 'hotro@viettutorz.edu.vn',
     // [SỐ_ĐT]: Hotline tư vấn / hỗ trợ
     phone: '0988.668.xxx',
     // [ĐỊA_CHỈ]: Để trống nếu chưa công bố địa chỉ vật lý

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F3FA3"/>
+      <stop offset="0.55" stop-color="#1E3A8A"/>
+      <stop offset="1" stop-color="#0B1221"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDE9A9"/>
+      <stop offset="0.5" stop-color="#F5C542"/>
+      <stop offset="1" stop-color="#CA8A04"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Nền -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <g transform="translate(256 256) scale(1) translate(-256 -256)">
+
+    <!-- Mũ tốt nghiệp -->
+    <g>
+      <!-- Mặt trên hình thoi -->
+      <path d="M256 74 L404 130 L256 186 L108 130 Z" fill="url(#gold)"/>
+      <!-- Thân mũ -->
+      <path d="M166 152 L166 200 C166 200 200 224 256 224 C312 224 346 200 346 200 L346 152
+               L256 186 Z" fill="#FDE9A9" opacity="0.9"/>
+      <!-- Dây tua: dùng màu đặc, vì gradient theo khung bao sẽ không hiện
+           trên nét thẳng đứng có bề rộng bằng 0. -->
+      <path d="M404 130 L404 196" stroke="#F5C542" stroke-width="11"
+            stroke-linecap="round" fill="none"/>
+      <circle cx="404" cy="212" r="16" fill="#F5C542"/>
+    </g>
+
+    <!-- Số lớp: phần nhận diện chính, phải đọc được ở 48px -->
+    
+    <g transform="translate(256 348) scale(1.5)"
+       fill="none" stroke="#FFFFFF" stroke-width="20"
+       stroke-linecap="round" stroke-linejoin="round">
+      <g transform="translate(-50 -70)"><path d="M14 14 L88 14 L44 128" /></g>
+    </g>
+
+    <!-- Thanh nền vàng: gợi gáy sách, tạo điểm tựa thị giác cho phần chữ -->
+    <rect x="150" y="430" width="212" height="18" rx="9" fill="#F5C542"/>
+  </g>
+</svg>

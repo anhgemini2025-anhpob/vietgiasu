@@ -140,7 +140,7 @@ export const GradeLevelView: React.FC<GradeLevelViewProps> = ({ level, grades })
               Bạn có con học ở cấp học khác?
             </h3>
             <p className="text-xs sm:text-sm text-slate-500">
-              Chuyển nhanh sang các cấp học khác trong hệ sinh thái VietTuorz:
+              Chuyển nhanh sang các cấp học khác trong hệ sinh thái VietTutorz:
             </p>
           </div>
 

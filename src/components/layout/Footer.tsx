@@ -1,150 +1,138 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MessageSquare, ExternalLink, Heart, ShieldCheck } from 'lucide-react';
-import { Logo } from '../common/Logo';
+import { ArrowUp } from 'lucide-react';
 import { SITE_CONFIG } from '../../config/siteConfig';
 
 export const Footer: React.FC = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <footer className="bg-brand-navy text-slate-200 pt-16 pb-12 border-t border-slate-800">
+    <footer className="bg-[#07111E] text-slate-100 pt-16 pb-12 border-t border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-12 border-b border-slate-800/80">
+        
+        {/* Main 3-Column Grid identical to ungdung.vercel.app */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 pb-12">
           
-          {/* Brand Col (2 cols on large screen) */}
-          <div className="lg:col-span-2 space-y-4">
-            <Logo variant="light" size="md" />
-            <p className="text-slate-300 text-sm leading-relaxed max-w-sm mt-3">
-              {SITE_CONFIG.subSlogan}
+          {/* Left Column (5 Cols): Brand Box, Description & Slogan */}
+          <div className="md:col-span-5 space-y-4">
+            
+            {/* Brand Box Pill */}
+            <div className="inline-flex items-center gap-3.5 p-2 pr-5 rounded-2xl bg-[#0A192F] border border-amber-400/40 shadow-md shadow-black/50">
+              <img
+                src="/logo.png"
+                alt="VietTutorz Logo"
+                className="h-11 w-auto object-contain rounded-xl"
+              />
+              <div className="border-l border-slate-700/60 pl-3.5">
+                <div className="text-xs sm:text-sm font-bold text-amber-300 uppercase tracking-wide">
+                  VietTutorz
+                </div>
+                <div className="text-xs text-slate-300 font-mono">
+                  Hệ Sinh Thái Gia Sư AI Lớp 1–12
+                </div>
+              </div>
+            </div>
+
+            {/* Ecosystem Description */}
+            <p className="text-slate-300 max-w-md leading-relaxed text-sm sm:text-base">
+              Hệ sinh thái gia sư AI toàn diện đồng hành cùng học sinh Việt Nam từ lớp 1 đến lớp 12. Ứng dụng công nghệ AI cá nhân hóa giúp củng cố kiến thức, bám sát chương trình GDPT và khơi gợi tinh thần tự học chủ động mỗi ngày.
             </p>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs text-slate-300">
-              <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span>12 ứng dụng độc lập • Trải nghiệm an toàn cho học sinh</span>
+
+            {/* Slogan in quotes */}
+            <div className="text-xs text-amber-300/90 font-mono font-bold">
+              "MỖI NGÀY TIẾN BỘ → MỖI BƯỚC TỰ TIN"
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-white text-sm font-bold uppercase tracking-wider mb-4">
-              Cấp học VietTuorz
+          {/* Middle Column (3 Cols): Danh Mục Cấp Học */}
+          <div className="md:col-span-3 space-y-3.5">
+            <h4 className="font-extrabold text-amber-300 text-base">
+              Danh Mục Cấp Học
             </h4>
-            <ul className="space-y-2.5 text-sm text-slate-300">
+            <ul className="space-y-2.5 text-sm sm:text-base">
               <li>
-                <Link to="/tieu-hoc" className="hover:text-amber-400 transition-colors flex items-center justify-between group">
-                  <span>Tiểu học</span>
-                  <span className="text-xs text-slate-400 group-hover:text-amber-300">Lớp 1–5</span>
+                <Link
+                  to="/tieu-hoc"
+                  className="text-slate-300 hover:text-amber-300 transition-colors"
+                >
+                  Tiểu học (Lớp 1 – 5)
                 </Link>
               </li>
               <li>
-                <Link to="/thcs" className="hover:text-emerald-400 transition-colors flex items-center justify-between group">
-                  <span>Trung học cơ sở</span>
-                  <span className="text-xs text-slate-400 group-hover:text-emerald-300">Lớp 6–9</span>
+                <Link
+                  to="/thcs"
+                  className="text-slate-300 hover:text-amber-300 transition-colors"
+                >
+                  THCS (Lớp 6 – 9)
                 </Link>
               </li>
               <li>
-                <Link to="/thpt" className="hover:text-purple-400 transition-colors flex items-center justify-between group">
-                  <span>Trung học phổ thông</span>
-                  <span className="text-xs text-slate-400 group-hover:text-purple-300">Lớp 10–12</span>
+                <Link
+                  to="/thpt"
+                  className="text-slate-300 hover:text-amber-300 transition-colors"
+                >
+                  THPT (Lớp 10 – 12)
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#chon-lop"
+                  className="text-slate-300 hover:text-amber-300 transition-colors"
+                >
+                  12 Ứng dụng lớp học riêng biệt
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/lien-he"
+                  className="text-slate-300 hover:text-amber-300 transition-colors"
+                >
+                  Liên hệ & Hỗ trợ
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Navigation Links */}
-          <div>
-            <h4 className="text-white text-sm font-bold uppercase tracking-wider mb-4">
-              Điều hướng
+          {/* Right Column (4 Cols): Tư Vấn & Đồng Hành */}
+          <div className="md:col-span-4 space-y-3.5">
+            <h4 className="font-extrabold text-amber-300 text-base">
+              Tư Vấn & Đồng Hành
             </h4>
-            <ul className="space-y-2.5 text-sm text-slate-300">
-              <li>
-                <Link to="/" className="hover:text-white transition-colors">
-                  Trang chủ
-                </Link>
-              </li>
-              <li>
-                <Link to="/tieu-hoc" className="hover:text-white transition-colors">
-                  Giới thiệu Tiểu học
-                </Link>
-              </li>
-              <li>
-                <Link to="/thcs" className="hover:text-white transition-colors">
-                  Giới thiệu THCS
-                </Link>
-              </li>
-              <li>
-                <Link to="/thpt" className="hover:text-white transition-colors">
-                  Giới thiệu THPT
-                </Link>
-              </li>
-              <li>
-                <Link to="/lien-he" className="hover:text-white transition-colors">
-                  Liên hệ & Góp ý
-                </Link>
-              </li>
-            </ul>
+            <p className="leading-relaxed text-slate-300 text-sm">
+              Bạn có mong muốn tìm kiếm giải pháp học tập AI hiệu quả, phù hợp với năng lực và giai đoạn học tập của con? Đội ngũ kỹ thuật luôn sẵn sàng đồng hành, tư vấn giải pháp và hoàn thiện trải nghiệm học tập tốt nhất cho từng học sinh.
+            </p>
+            <div className="pt-1 flex items-center gap-2 text-xs text-amber-400/90 font-mono">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+              <span>Liên hệ tư vấn & trao đổi qua khung liên hệ trực tiếp</span>
+            </div>
           </div>
 
-          {/* Contact Col */}
-          <div>
-            <h4 className="text-white text-sm font-bold uppercase tracking-wider mb-4">
-              Kết nối & Hỗ trợ
-            </h4>
-            <ul className="space-y-3 text-sm text-slate-300">
-              {SITE_CONFIG.contact.email && (
-                <li>
-                  <a
-                    href={`mailto:${SITE_CONFIG.contact.email}`}
-                    className="hover:text-white transition-colors inline-flex items-center gap-2 group"
-                  >
-                    <Mail className="w-4 h-4 text-blue-400 shrink-0" />
-                    <span className="truncate">{SITE_CONFIG.contact.email}</span>
-                  </a>
-                </li>
-              )}
-              {SITE_CONFIG.contact.phone && (
-                <li>
-                  <span className="inline-flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                    <span>{SITE_CONFIG.contact.phone}</span>
-                  </span>
-                </li>
-              )}
-              {SITE_CONFIG.contact.zaloUrl && (
-                <li>
-                  <a
-                    href={SITE_CONFIG.contact.zaloUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-blue-300 transition-colors inline-flex items-center gap-2"
-                  >
-                    <MessageSquare className="w-4 h-4 text-sky-400 shrink-0" />
-                    <span>Liên hệ Zalo</span>
-                    <ExternalLink className="w-3 h-3 text-slate-400" />
-                  </a>
-                </li>
-              )}
-              {SITE_CONFIG.contact.address && (
-                <li className="text-xs text-slate-400 pt-1 leading-normal">
-                  {SITE_CONFIG.contact.address}
-                </li>
-              )}
-            </ul>
-          </div>
         </div>
 
-        {/* Bottom Bar: Copyright & Duy Anh Lab credit */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <div className="flex items-center gap-2">
-            <span>© {SITE_CONFIG.copyrightYear} {SITE_CONFIG.brandName}. All rights reserved.</span>
+        {/* Bottom Bar with Copyright & Về đầu trang button */}
+        <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm">
+          <div className="text-slate-400">
+            © {SITE_CONFIG.copyrightYear} {SITE_CONFIG.brandName.toUpperCase()} •{' '}
+            <a
+              href="https://vietgiasu.vercel.app/"
+              className="text-amber-400 font-bold hover:underline"
+            >
+              vietgiasu.vercel.app
+            </a>
+            {' '}• {SITE_CONFIG.designerCredit}
           </div>
 
-          <div className="flex items-center gap-2 text-slate-300">
-            <span>{SITE_CONFIG.designerCredit}</span>
-            <span className="text-slate-600">•</span>
-            <span className="inline-flex items-center gap-1 text-slate-400">
-              Đồng hành cùng học sinh Việt <Heart className="w-3 h-3 text-rose-500 fill-rose-500 inline" />
-            </span>
-          </div>
+          <button
+            onClick={scrollToTop}
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0A192F] hover:bg-amber-400 text-amber-300 hover:text-slate-950 transition-all border border-amber-400/30 font-bold cursor-pointer text-xs sm:text-sm"
+          >
+            <span>Về đầu trang</span>
+            <ArrowUp className="w-4 h-4" />
+          </button>
         </div>
+
       </div>
     </footer>
   );

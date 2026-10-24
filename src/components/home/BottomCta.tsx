@@ -26,7 +26,7 @@ export const BottomCta: React.FC<BottomCtaProps> = ({ onSelectGradeClick }) => {
             </h2>
 
             <p className="text-slate-200 text-base md:text-lg leading-relaxed max-w-xl mx-auto">
-              Chọn lớp phù hợp và khám phá ứng dụng VietTuorz ngay hôm nay. Trải nghiệm trực quan, hoàn toàn miễn phí và không cần đăng nhập.
+              Chọn lớp phù hợp và khám phá ứng dụng VietTutorz ngay hôm nay. Trải nghiệm trực quan, hoàn toàn miễn phí và không cần đăng nhập.
             </p>
 
             <div className="pt-2">

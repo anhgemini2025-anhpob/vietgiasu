@@ -33,7 +33,7 @@ export const TrustBanner: React.FC = () => {
             )}
 
             <p className="text-[11px] text-slate-400 italic">
-              * Lưu ý: VietTuorz là công cụ gia sư AI bổ trợ phương pháp tự học và ôn tập độc lập cho học sinh.
+              * Lưu ý: VietTutorz là công cụ gia sư AI bổ trợ phương pháp tự học và ôn tập độc lập cho học sinh.
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
-# VietTuorz – Hệ Sinh Thái Gia Sư AI Lớp 1–12
+# VietTutorz – Hệ Sinh Thái Gia Sư AI Lớp 1–12
 
-> **VIETTUORZ – MỖI NGÀY TIẾN BỘ, MỖI BƯỚC TỰ TIN**  
-> *Mỗi học sinh có một hành trình riêng. VietTuorz giúp việc học trở nên gần gũi, có định hướng và phù hợp hơn với từng em.*
+> **VIETTUTORZ – MỖI NGÀY TIẾN BỘ, MỖI BƯỚC TỰ TIN**  
+> *Mỗi học sinh có một hành trình riêng. VietTutorz giúp việc học trở nên gần gũi, có định hướng và phù hợp hơn với từng em.*
 
 Website landing page chính thức và cổng điều hướng đến 12 ứng dụng gia sư AI độc lập cho học sinh từ Lớp 1 đến Lớp 12 trên toàn quốc.
 
@@ -132,4 +132,4 @@ Toàn bộ thông tin thay thế được tập trung tại file **`src/config/s
 
 ---
 
-© 2026 VietTuorz. Thiết kế bởi Duy Anh Lab. All rights reserved.
+© 2026 VietTutorz. Thiết kế bởi Duy Anh Lab. All rights reserved.
