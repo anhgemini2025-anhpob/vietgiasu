@@ -50,7 +50,7 @@ Website landing page chính thức và cổng điều hướng đến 12 ứng d
 ```text
 ├── public/
 │   ├── apple-touch-icon.png    # Icon chất lượng cao cho iPhone Home Screen (180x180)
-│   ├── favicon.svg             # Vector Favicon thương hiệu VietTuorz
+│   ├── favicon.svg             # Vector Favicon thương hiệu VietTutorz
 │   ├── favicon-32x32.png       # Standard Favicon
 │   ├── icon-192.png            # Icon Android PWA 192px
 │   ├── icon-512.png            # Icon Android PWA 512px

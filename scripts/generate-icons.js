@@ -133,8 +133,8 @@ async function renderIcons() {
 
   // 6. Manifest for PWA & mobile Add to Home Screen
   const manifest = {
-    name: "VietTuorz – Gia sư AI lớp 1–12",
-    short_name: "VietTuorz",
+    name: "VietTutorz – Gia sư AI lớp 1–12",
+    short_name: "VietTutorz",
     description: "Hệ sinh thái gia sư AI đồng hành cùng học sinh Việt Nam từ lớp 1 đến lớp 12.",
     start_url: "/",
     display: "standalone",
